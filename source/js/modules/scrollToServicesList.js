@@ -9,6 +9,6 @@ const scrollToServicesList = () => {
 
   btn.addEventListener(`click`, () => window.scroll({top: list.getBoundingClientRect().top - 100, left: 0, behavior: `smooth`}));
 
-}
+};
 
-export {scrollToServicesList}
+export {scrollToServicesList};
