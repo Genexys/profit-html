@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <include src="source/html/base/head.html"></include>
+
+</head>
+<body>
+
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<div class="wrapper">
+  <include src="source/html/base/header.html"></include>
+  <main class="inner-page">
+    <div class="container">
+      <include src="source/html/components/breadcrumbs.html"></include>
+      <h1 class="title-page title-page--left inner-page__title">Бухгалтерские консультация для ИП</h1>
+      <div class="article-author">
+        <img src="img/content/empty-user.png" alt="Мария Шарапова">
+        <span class="article-author__user">
+          <span class="article-author__name">Мария Шарапова</span>
+          <span class="article-author__position">Ваш любимый автор</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="inner-video-block">
+      <include src="source/html/components/video-section-page.html"></include>
+    </div>
+
+    <include src="source/html/components/callback-block-with-modal.html" locals='{
+        "class": "callback-block-with-modal--mini"
+    }'></include>
+
+    <include src="source/html/components/single-review.html"></include>
+
+    <div class="article-wrapper">
+      <div class="container">
+        <include src="source/html/components/article-services.html"></include>
+      </div>
+    </div>
+
+    <include src="source/html/components/additional-services.html"></include>
+    <include src="source/html/components/block-consult.html"></include>
+  </main>
+
+  <include src="source/html/base/footer.html"></include>
+  <include src="source/html/components/menu-overlay.html"></include>
+  <include src="source/html/components/form-overlay.html"></include>
+  <include src="source/html/components/form-request-overlay.html"></include>
+  <include src="source/html/components/search.html"></include>
+  <include src="source/html/components/modal.html"></include>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.callback-block-with-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  &--mini {
+    padding-top: 0px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 0em;
+    line-height: 46px;
+    text-align: center;
+    color: #074b79;
+  }
+
+  &__text {
+    margin: 0 0 40px;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    line-height: 26px;
+    text-align: center;
+    color: #9dafbd;
+  }
+
+  &__button {
+    @include btn-shadow;
+  }
+}

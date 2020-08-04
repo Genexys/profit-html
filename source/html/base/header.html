@@ -1,0 +1,41 @@
+<header class="header">
+  <div class="container">
+    <figure class="header__logo">
+      <img src="img/svg/main-logo.svg" alt="Профит">
+      <figcaption class="header__logo-text">
+        Бухгалтерские услуги
+      </figcaption>
+    </figure>
+
+    <div class="header__main-nav">
+      <include src="source/html/components/main-nav.html"></include>
+
+      <button type="button" class="header__mobile-button header__mobile-button--overlay" aria-expanded="false" aria-controls="menu-overlay"
+              aria-label="кнопка меню">
+          <span class="hamburger-wrapper">
+            <span class="hamburger-inner">
+          </span>
+          </span>
+      </button>
+
+      <button type="button" class="header__mobile-button header__mobile-button--main" aria-expanded="false" aria-controls="main-nav"
+              aria-label="кнопка меню">
+          <span class="hamburger-wrapper">
+            <span class="hamburger-inner">
+          </span>
+          </span>
+      </button>
+    </div>
+
+    <button type="button" class="header__search" aria-expanded="false" aria-controls="layout-search">
+      <span>Поиск услуги</span>
+      <svg width="20" height="20" class="icon-search" aria-label="Поиск" role="img">
+        <use xlink:href="#icon-search"></use>
+      </svg>
+    </button>
+
+    <div class="header__phone">
+      <a href="">+7 928 098 23</a>, <span>Краснодар</span>
+    </div>
+  </div>
+</header>

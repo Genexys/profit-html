@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <include src="source/html/base/head.html"></include>
+
+</head>
+<body>
+
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<div class="wrapper">
+  <include src="source/html/base/header.html"></include>
+  <main>
+    <include src="source/html/components/main-banner.html"></include>
+    <include src="source/html/components/main-list-services.html"></include>
+
+    <div class="main-search">
+      <div class="container">
+        <div class="main-search__heading">Найдите нужную услугу в 2 клика</div>
+        <div class="main-search__form-wrapper">
+          <span>Поиск услуги:</span>
+
+          <form action="" class="main-search__form">
+            <div class="main-search__input-wrapper">
+              <input type="text" placeholder="Название услуги" class="main-search__input">
+              <svg width="20" height="20" class="icon-search">
+                <use xlink:href="#icon-search">
+                </use>
+              </svg>
+            </div>
+
+            <button type="submit" class="main-search__btn">
+              Найти
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-review">
+      <div class="container">
+        <div class="block-review__heading">
+          Отзывы
+        </div>
+        <div class="block-review__descr">
+          Наши клиенты пишут
+        </div>
+
+        <div class="block-review__slider review-slider">
+          <div class="review-slider__container swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide review-slider__slide review-slide">
+                <div class="review-slide__img">
+                  <img src="img/content/content-empty-user.png" alt="Мария Шарапова">
+                </div>
+
+                <div class="review-slide__content">
+                  <p class="review-slide__text">
+                    Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus.
+                  </p>
+
+                  <div class="review-slide__name">Мария Шарапова</div>
+                  <div class="review-slide__position">Директор по развитию сетей</div>
+                </div>
+              </li>
+              <li class="swiper-slide review-slider__slide review-slide">
+                <div class="review-slide__img">
+                  <img src="img/content/content-empty-user.png" alt="Мария Шарапова">
+                </div>
+
+                <div class="review-slide__content">
+                  <p class="review-slide__text">
+                    Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus.
+                  </p>
+
+                  <div class="review-slide__name">Мария Шарапова</div>
+                  <div class="review-slide__position">Директор по развитию сетей</div>
+                </div>
+              </li>
+              <li class="swiper-slide review-slider__slide review-slide">
+                <div class="review-slide__img">
+                  <img src="img/content/content-empty-user.png" alt="Мария Шарапова">
+                </div>
+
+                <div class="review-slide__content">
+                  <p class="review-slide__text">
+                    Currently, Ford sells six sedans and coupes in North America with the Fiesta, Focus, Fusion, C-Max, Mustang and Taurus. This lineup hits multiple segments from the compact Fiest to the mid-size Focus, C-Max and Fusion to the full-size Taurus.
+                  </p>
+
+                  <div class="review-slide__name">Мария Шарапова</div>
+                  <div class="review-slide__position">Директор по развитию сетей</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="review-slider__button review-slider__button--prev">
+            <svg class="review-slider__arrow" width="8" height="14">
+              <use xlink:href="#simple-arrow"></use>
+            </svg>
+          </div>
+          <div class="review-slider__button review-slider__button--next">
+            <svg class="review-slider__arrow" width="8" height="14">
+              <use xlink:href="#simple-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <include src="source/html/components/block-consult.html"></include>
+  </main>
+
+  <include src="source/html/base/footer.html"></include>
+  <include src="source/html/components/menu-overlay.html"></include>
+  <include src="source/html/components/form-overlay.html"></include>
+  <include src="source/html/components/form-request-overlay.html"></include>
+  <include src="source/html/components/search.html"></include>
+  <include src="source/html/components/modal.html"></include>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

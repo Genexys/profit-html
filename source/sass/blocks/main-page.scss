@@ -1,0 +1,130 @@
+.main-search {
+  padding: 63px 0;
+
+  &__heading {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.03rem;
+    text-align: center;
+
+    @media screen and (max-width: 560px) {
+      font-size: 16px;
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+    }
+
+    span {
+      flex-shrink: 0;
+      margin-right: 15px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+
+      @media screen and (max-width: 560px) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    max-width: 690px;
+    width: 100%;
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    max-width: 574px;
+    width: 100%;
+    height: 40px;
+
+    .icon-search {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      fill: #9DAFBD;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    padding: 0 40px 0 20px;
+    border: 1px solid #106fc2;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #074B79;
+
+    &::placeholder {
+      color: #074B79;
+    }
+  }
+
+  &__btn {
+    @include btn;
+    margin-left: 25px;
+    padding-left: 37px;
+    padding-right: 37px;
+    background-color: #074B79;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    color: #ffffff;
+
+    @media screen and (max-width: 560px) {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+}
+
+.block-review {
+  padding-top: 125px;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 60px;
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+    font-size: 54px;
+    line-height: 63px;
+    letter-spacing: -0.03rem;
+    text-align: center;
+  }
+
+  &__descr {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #A8B8C4;
+  }
+
+  &__slider {
+    padding: 110px 0 150px;
+
+    @media screen and (max-width: 1024px) {
+      padding: 100px 50px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding-top: 60px;
+    }
+  }
+}
+

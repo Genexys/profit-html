@@ -1,0 +1,142 @@
+.contacts {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 0em;
+    line-height: 46px;
+    text-align: left;
+    color: #074b79;
+
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+
+  &__form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    padding-bottom: 55px;
+
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      padding-right: 0;
+    }
+  }
+
+  &__address {
+    margin-top: 0;
+  }
+
+  &__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+}
+
+.address-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 500px;
+  height: 90px;
+  font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
+
+  &__item {
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    line-height: 26px;
+    text-align: left;
+    color: #074b79;
+
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      display: flex;
+      justify-content: space-between;
+      max-width: 200px;
+    }
+
+    &--name {
+      font-size: 18px;
+    }
+
+    &--link {
+      a {
+        text-decoration: underline;
+        color: #074b79;
+      }
+    }
+  }
+}
+
+.map {
+  position: relative;
+
+  img {
+    filter: grayscale(100%);
+  }
+
+  &__info {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 373px;
+    height: 133px;
+    transform: translate(-50%, -30%);
+    background-color: #fff;
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.2));
+
+    @media screen and (max-width: 960px) {
+      width: 300px;
+      height: 100px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -9px;
+      transform: translateX(-50%);
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-top: 10px solid #ffffff;
+    }
+
+    a {
+      font-weight: normal;
+      font-size: 18px;
+      letter-spacing: -0.03em;
+      line-height: 26px;
+      text-align: center;
+      color: #026fc2;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}

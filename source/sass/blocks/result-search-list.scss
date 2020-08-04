@@ -1,0 +1,123 @@
+.result-search-list {
+  padding-top: 50px;
+
+  &-container {
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 53px;
+
+    @include viewport--lg {
+      padding: 0 32px;
+    }
+
+    @include viewport--md {
+      padding: 0 16px;
+    }
+
+    @include viewport--sm {
+      padding: 0 8px;
+    }
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &:first-of-type {
+      padding-right: 20px;
+    }
+
+    &:last-of-type {
+      margin-left: auto;
+    }
+  }
+
+  &__heading {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D1DBE3;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    line-height: 26px;
+    text-align: left;
+    color: #9dafbd;
+
+    .result-search-list__col:last-of-type {
+      margin-right: auto;
+      margin-left: 0;
+
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 29px 0 24px;
+    border-bottom: 1px solid #D1DBE3;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #F7F9FA;
+    }
+  }
+
+  &__name {
+    margin-right: 30px;
+    text-decoration: underline;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    line-height: 26px;
+    text-align: left;
+    color: #1177c5;
+
+    @media screen and (max-width: 500px) {
+      margin-right: 10px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__price {
+    margin-right: 25px;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    line-height: 26px;
+    text-align: left;
+    color: #284f69;
+
+    @media screen and (max-width: 600px) {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: 40px;
+    border: 1px solid #074B79;
+    border-radius: 20px;
+    transform: rotate(-90deg);
+    background-image: url("../img/sprite/icon-arrow-dropdown.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 3px 6px;
+    transition: transform 0.3s;
+
+    @media screen and (max-width: 767px) {
+      right: 20px;
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.block-consult {
+  padding: 70px 0 90px;
+  background-color: #074b79;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__heading {
+    position: relative;
+    max-width: 940px;
+    width: 100%;
+    margin: 0;
+    font-size: 54px;
+    line-height: 63px;
+    letter-spacing: -0.04rem;
+    text-align: center;
+    color: #ffffff;
+
+    @media screen and (max-width: 900px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      top: 3px;
+      left: -7px;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #ec1c24;
+      border-radius: 50%;
+
+      @media screen and (max-width: 900px) {
+        top: 2px;
+        left: -5px;
+      }
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__descr {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.03rem;
+    text-align: center;
+    color: #9DAFBD;
+  }
+}
+
+.main-consult-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 53px;
+
+  @media screen and (max-width: 440px) {
+    flex-direction: column;
+  }
+
+  .input-wrapper {
+    max-width: 335px;
+    width: 100%;
+    margin-right: 20px;
+    border: 1px solid #074B79;
+    border-radius: 4px;
+
+    @media screen and (max-width: 440px) {
+      max-width: 100%;
+    }
+
+    input {
+      width: 100%;
+      height: 40px;
+      padding-left: 15px;
+      border: none;
+      border-radius: 4px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #074B79;
+
+      &::placeholder {
+        color: #074B79;
+      }
+    }
+  }
+
+  &__button {
+    flex-shrink: 0;
+    @include btn;
+    padding: 12px 28px;
+    border: none;
+    background-color: #EC1C24;
+    color: #ffffff;
+
+    @media screen and (max-width: 440px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

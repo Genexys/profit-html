@@ -1,0 +1,50 @@
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+@import "vendor/swiper";
+@import "vendor/modal";
+
+// Global
+//---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/typography";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+//---------------------------------
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/main-nav";
+@import "blocks/block-overlay";
+@import "blocks/inner-page";
+@import "blocks/video-section-page";
+@import "blocks/main-banner";
+@import "blocks/search";
+@import "blocks/main-list-services";
+@import "blocks/block-list-services";
+@import "blocks/list-service";
+@import "blocks/review-slider";
+@import "blocks/block-consult";
+@import "blocks/breadcrumbs";
+@import "blocks/single-review";
+@import "blocks/article-block";
+@import "blocks/additional-services";
+@import "blocks/callback-block-with-modal";
+@import "blocks/price-list";
+@import "blocks/qa";
+@import "blocks/site-map-list";
+@import "blocks/contacts-page";
+@import "blocks/team";
+@import "blocks/result-search-list";
+
+// Page
+//---------------------------------
+
+@import "blocks/main-page";

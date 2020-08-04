@@ -1,0 +1,39 @@
+.breadcrumb {
+  display: flex;
+  margin: 0 0 25px;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    display: flex;
+
+    &:not(:first-of-type) {
+      margin-left: 38px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -25px;
+        width: 18px;
+        height: 8px;
+        background-image: url(../img/svg/icon-feather-arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    line-height: 16px;
+    text-align: left;
+    color: #a3b4c1;
+
+    &[aria-current='page'] {
+      color: #2181C9;
+    }
+  }
+}
