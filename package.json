@@ -52,6 +52,7 @@
     "posthtml-include": "^1.4.3",
     "stylelint": "13.6.x",
     "stylelint-config-htmlacademy": "0.1.x",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "4.43.0",
     "webpack-stream": "5.2.1"
   },

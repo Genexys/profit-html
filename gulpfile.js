@@ -47,13 +47,13 @@ gulp.task(`css`, function () {
 gulp.task(`script`, function () {
   return gulp.src([`source/js/main.js`])
     .pipe(webpackStream(webpackConfig))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest(`build/js`));
 });
 
 gulp.task(`concat-js-main`, function () {
-  return gulp.src([`source/js/main.js`, `source/js/utils/**/*.js`, `source/js/modules/**/*.js`])
-    .pipe(concat(`main.readonly.js`))
+  return gulp.src([`source/js/main.js`])
+    .pipe(concat(`main.js`))
     .pipe(gulp.dest(`build/js`));
 });
 
@@ -117,7 +117,7 @@ gulp.task(`server`, function () {
   gulp.watch(`source/img/**/*.svg`, gulp.series(`copysvg`, `sprite`, `html`, `refresh`));
   gulp.watch(`source/img/**/*.{png,jpg}`, gulp.series(`copypngjpg`, `html`, `refresh`));
   gulp.watch(`source/html/**/*.html`, gulp.series(`html`, `refresh`));
-  gulp.watch(`source/js/**/*.js`, gulp.series(`script`, `refresh`));
+  gulp.watch(`source/js/**/*.js`, gulp.series(`script`,`concat-js-main`, `refresh`));
 });
 
 gulp.task(`refresh`, function (done) {

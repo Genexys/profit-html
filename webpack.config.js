@@ -1,15 +1,24 @@
 const path = require(`path`);
+const webpack = require("webpack");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const {CleanWebpackPlugin} = require(`clean-webpack-plugin`);
 
 module.exports = {
   context: path.resolve(__dirname, `source`),
-  mode: `development`, // Режим сборки
+  mode: `production`, // Режим сборки
+  optimization: {
+    minimize: true,
+    minimizer: [new UglifyJsPlugin({
+      include: /\.min\.js$/
+    })]
+  },
   entry: {
-    main: `./js/main.js`,
-    vendor: `./js/vendor.js`,
+    // "main": `./js/main.js`,
+    // "main.min": `./js/main.js`,
+    "vendor.min": `./js/vendor.js`,
   }, // Точка входа приложения
   output: {// Настройка выходного файла
-    filename: `[name].min.js`,
+    filename: `[name].js`,
     path: path.join(__dirname, `build/js`),
   },
   plugins: [

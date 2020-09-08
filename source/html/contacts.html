@@ -40,34 +40,50 @@
           <span class="contacts__heading">
                 Адрес:
               </span>
-          <address class="contacts__address address-block">
-            <span class="address-block__item address-block__item--name">ООО “ПРОФИТ”</span>
-            <span class="address-block__item">350000, г. Краснодар</span>
-            <span class="address-block__item">ул. Старокубанская оф. 888</span>
-            <span class="address-block__item address-block__item--link">
-              e-mail: <a href="mailto:hello@gmail.com"
-                         class="address-block__address-mail">hello@gmail.com</a>
+          <address class="contacts__address address-block" itemscope itemtype="http://schema.org/Organization">
+            <span class="address-block__item address-block__item--name" itemprop="name">ООО “ПРОФИТ”</span>
+
+            <div class="address-block__item address-block__item--wrapper" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <div class="address-block__cell" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span class="address-block__item"><span itemprop="postalCode">350000</span>, <span itemprop="addressLocality">г. Краснодар</span></span>
+                <span class="address-block__item" itemprop="streetAddress">ул. Старокубанская оф. 888</span>
+              </div>
+
+              <div class="address-block__cell">
+                <span class="address-block__item address-block__item--align">
+                  <span>e-mail:</span> <a href="mailto:hello@gmail.com" class="address-block__link" itemprop="email">hello@gmail.com</a>
+                </span>
+                <span class="address-block__item address-block__item--align">
+                  <span>телефон:</span> <a href="tel:+792854321" class="address-block__address-phone" itemprop="telephone">+7 928 543 21</a>
+                </span>
+              </div>
+            </div>
+
+            <span class="address-block__item address-block__item--margin address-block__item--font">Время работы:</span>
+            <span class="address-block__cell">
+                <time class="address-block__item" datetime="Mo-Su">Понедельник – Пятница:</time>
             </span>
-            <span class="address-block__item">
-              телефон: <a href="tel:+792854321"
-                          class="address-block__address-phone">+7 928 543 21</a>
-            </span>
+            <span class="address-block__cell">
+              <span class="address-block__item">
+                <time>9:00</time> до <time>18:00</time>
+              </span>
+              </span>
           </address>
 
         </div>
         <div class="contacts__map">
-            <div class="map-block">
-              <div class="map">
-                <div class="map__info">
-                  <a href="https://yandex.ru/maps/-/CCQl6TVcxA" target="_blank">
-                    <span>ул. Старокубанская оф. 888</span>
-                    <span>350000, г. Краснодар</span>
-                  </a>
+          <div class="map-block">
+            <div class="map">
+              <div class="map__info">
+                <a href="https://yandex.ru/maps/-/CCQl6TVcxA" target="_blank">
+                  <span>ул. Старокубанская оф. 888</span>
+                  <span>350000, г. Краснодар</span>
+                </a>
 
-                </div>
-                <img src="https://static-maps.yandex.ru/1.x/?ll=39.048795,45.018038&size=450,450&z=16&l=map" alt="">
               </div>
+              <img src="https://static-maps.yandex.ru/1.x/?ll=39.048795,45.018038&size=450,450&z=16&l=map" alt="">
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -80,14 +96,16 @@
   <include src="source/html/components/form-request-overlay.html"></include>
   <include src="source/html/components/search.html"></include>
   <include src="source/html/components/modal.html"></include>
+  <include src="source/html/components/cookies.html"></include>
 </div>
 
 <script
   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
   crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 <script src="js/vendor.min.js"></script>
-<script src="js/main.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
