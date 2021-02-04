@@ -1,5 +1,4 @@
 .main-nav {
-
   @media screen and (max-width: 767px) {
     position: fixed;
     left: 0;
@@ -37,16 +36,11 @@
 
   &__item {
     position: relative;
-    padding: 5px 19px 5px 15px;
     transition: background-color 0.3s;
-
-    @media screen and (max-width: 1230px) {
-      padding: 5px;
-    }
 
     &:not(:first-of-type) {
       @media screen and (max-width: 767px) {
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
 
@@ -73,10 +67,16 @@
   &__link {
     position: relative;
     z-index: 2;
+    display: block;
+    padding: 5px 19px 5px 15px;
     font-size: 14px;
     letter-spacing: -0.03rem;
     color: #9DAFBD;
     transition: color 0.3s;
+
+    @media screen and (max-width: 1230px) {
+      padding: 5px;
+    }
   }
 }
 

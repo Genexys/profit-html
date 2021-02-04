@@ -26,6 +26,19 @@
     margin: 0 auto 45px;
     max-width: 100%;
   }
+
+  ul {
+    max-width: 602px;
+    width: 100%;
+    margin: auto;
+    padding-left: 20px;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .comment-block {
