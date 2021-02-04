@@ -54,8 +54,8 @@
   max-width: 500px;
   font-style: normal;
 
-  @media screen and (max-width: 767px) {
-    height: auto;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
   }
 
   &__item {
@@ -80,6 +80,10 @@
 
     &--wrapper {
       display: flex;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
     }
 
     &--margin {
@@ -95,6 +99,11 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      max-width: 300px;
+    }
 
     .address-block__item--align {
       display: flex;
